@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Surprise</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <style>
+        /* Your existing CSS styles here */
+
+        .hidden {
+            display: none;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+            margin: 20px;
+        }
+
+        header {
+            background-color: #ff3366;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+        }
+        button {
+            margin-top: 20px;
+            font-size: 18px;
+            background: #2b79c7;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            width: 100px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 20px;
+            font-size: 30px;
+        }
+
+        button:hover {
+            background-color: #8a364b;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Happy Valentine's Day, Sopheak!</h1>
+        <!-- <p></p> -->
+    </header>
+
+    <main>
+        <button id="specialMessageButton" onclick="toggleMessage('specialMessage')">
+            <i class="uil uil-heart"></i>
+        </button>
+        <button id="memoriesTogetherButton" onclick="toggleMessage('memoriesTogether')">
+            <i class="uil uil-camera"></i>
+        </button>
+
+        <section id="specialMessageSection" class="hidden">
+            <h2>A Special Message</h2>
+            <p>My love for you is like a journey that knows no end. Thank you for being my partner in this beautiful adventure.</p>
+        </section>
+
+        <section id="memoriesTogetherSection" class="hidden">
+            <h2>Memories Together</h2>
+            <p>Here are some of our precious moments captured:</p>
+            <img src="/sv.png" alt="">
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-decoration: underline;">Sopheak and Vichea</p>
+    </footer>
+
+    <script>
+        function toggleMessage(sectionId) {
+            var section = document.getElementById(sectionId + 'Section');
+            var button = document.getElementById(sectionId + 'Button');
+            
+            section.classList.toggle("hidden");
+            button.classList.toggle("hidden");
+        }
+    </script>
+</body>
+
+</html>
