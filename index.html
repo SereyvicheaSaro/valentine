@@ -21,7 +21,9 @@
         }
 
         header {
-            background-color: #ff3366;
+            background: rgb(2,0,36);
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,61,1) 0%, rgba(255,45,100,1) 0%, rgba(255,99,140,1) 0%, rgba(255,202,237,1) 94%);
             padding: 20px;
             color: white;
             border-radius: 10px;
@@ -50,7 +52,8 @@
         button {
             margin-top: 20px;
             font-size: 18px;
-            background: #2b79c7;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,61,1) 0%, rgba(255,45,100,1) 0%, rgba(255,99,140,1) 0%, rgba(255,202,237,1) 94%);
             border: none;
             color: white;
             padding: 15px 20px;
@@ -65,13 +68,30 @@
         button:hover {
             background-color: #8a364b;
         }
+        footer {
+            position: relative; /* Set the position property to relative on the parent element */
+        }
+
+        footer p {
+            position: absolute; 
+            top: 350px;
+            left: 50%; /* Set left to 50% to move the text to the center horizontally */
+            transform: translateX(-50%); /* Use transform to adjust the position relative to its own width */
+            margin: 0; /* Remove any default margins */
+        }
+        footer img{
+            position: absolute;
+            left: 50%; /* Set left to 50% to move the text to the center horizontally */
+            transform: translateX(-50%); /* Use transform to adjust the position relative to its own width */
+            margin: 0; /* Remove any default margins */
+        }
+
     </style>
 </head>
 
 <body>
     <header>
         <h1>Happy Valentine's Day, Sopheak!</h1>
-        <!-- <p></p> -->
     </header>
 
     <main>
@@ -95,7 +115,8 @@
     </main>
 
     <footer>
-        <p style="text-decoration: underline;">Sopheak and Vichea</p>
+        <img src="images/flowers-flower.gif" alt="">
+        <p style="text-decoration: underline; ">Sopheak and Vichea</p>
     </footer>
 
     <script>
